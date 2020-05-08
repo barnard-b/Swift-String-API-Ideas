@@ -51,3 +51,32 @@ if str.hasPrefix(prefixToRemove) {
     str = String(str.dropFirst(prefixToRemove.count))
 }
 ```
+
+## First Letter Capitalization
+[davedelong](https://forums.swift.org/t/additional-string-processing-apis/36255/4)
+
+**Library:** Foundation
+
+**Use:** Capitalize the first letter in a string.
+
+**Example Method Signature:**
+```
+func capitalizingFirstLetter(with locale: Locale? = nil) -> String
+mutating func capitalizeFirstLetter(with locale: Locale? = nil)
+```
+
+**Example Usage:**
+```
+var hello = "guten Tag"
+hello.capitalizeFirstLetter()
+// hello: "Guten Tag"
+```
+
+**Current Way to Achieve Example Result:**
+```
+var hello = "guten Tag"
+if let first = hello.first {
+    hello = String(first).capitalized + String(hello.dropFirst())
+}
+// hello: "Guten Tag"
+```
