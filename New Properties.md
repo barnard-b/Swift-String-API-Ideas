@@ -19,7 +19,7 @@ let hasOnlyASCIICharacters = str.isASCII
 
 **Current Way to Achieve Example Result:**
 ```
-let hasOnlyASCIICharacters = str.compactMap({ $0.isASCII }).allSatisfy({ $0 == true })
+let hasOnlyASCIICharacters = str.allSatisfy({ $0.isASCII })
 ```
 
 ## Case Folded
