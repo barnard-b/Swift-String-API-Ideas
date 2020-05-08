@@ -3,6 +3,8 @@
 ## Inline Text Replacement
 [Karl 👑🦆](https://forums.swift.org/t/additional-string-processing-apis/36255/3)
 
+**Library:** Foundation
+
 **Use:** If present, replaces all occurrences of the specified text within the current string. Compliments the existing [`replacingOccurrences(of:with:options:range:)`](https://developer.apple.com/documentation/swift/stringprotocol/3126775-replacingoccurrences).
 
 **Example Method Signature:**
@@ -22,6 +24,8 @@ str = str.replacingOccurrences(of: "Hello", with: "Guten Tag")
 
 ## Prefix/Suffix Removal
 [davedelong](https://forums.swift.org/t/additional-string-processing-apis/36255/4)
+
+**Library:** Standard Library
 
 **Use:** If present, removes the specified prefix or suffix from a string.
 
