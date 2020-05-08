@@ -18,4 +18,7 @@ let hasOnlyASCIICharacters = str.isASCII
 ```
 
 **Current Way to Achieve Example Result:**
-Not applicable.
+```
+let isASCIIResults = Set(str.compactMap({ $0.isASCII }))
+let hasOnlyASCIICharacters = isASCIIResults.count == 1 && isASCIIResults.first == true
+```
